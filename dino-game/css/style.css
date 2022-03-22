@@ -1,0 +1,78 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.galodinho {
+  width: 60px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  background-image: url("../imgs/galodinho.png");
+}
+
+.cactus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url("../imgs/cactus.png");
+}
+
+body {
+  background-color: #f8f8f8;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.game-over {
+  text-align: center;
+  margin-top: 40vh;
+  line-height: 40px;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  background-image: url("../imgs/background.png");
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#score {
+  text-align: center;
+  color: #666;
+  margin: 50px 0;
+}
+
+.developed-by {
+  position: absolute;
+  bottom: 13px;
+  font-weight: 500;
+  margin-left: 13px;
+  color: #666;
+}
+
+.developed-by a {
+  color: #49796B;
+  /* text-decoration: none; */
+}
