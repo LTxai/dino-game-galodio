@@ -45,7 +45,7 @@ body {
   bottom: 0;
   background-image: url("../imgs/background.png");
   background-repeat: repeat-x;
-  animation: slideright 2000s infinite linear;
+  animation: slideright 600s infinite linear;
   width: 100%;
   height: 200px;
   overflow-x: hidden;
