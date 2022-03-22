@@ -75,13 +75,14 @@ function startGame() {
                 cactusPosition -= 10;
                 cactus.style.left = cactusPosition + 'px'
             }
-        }, 20)
+        }, 30)
 
         setTimeout(createCactus, randomTime);
     }
 
     document.addEventListener('keyup', handleKeyUp);
     document.addEventListener('touchend', handleTouch);
+    document.addEventListener('click', handleTouch);
     console.log(`Pontos: ${points}`)
     createCactus()
 }
