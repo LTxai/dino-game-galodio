@@ -91,6 +91,7 @@ header .container {
 }
 
 .developed-by {
+  align-self: flex-start;
   position: absolute;
   bottom: 13px;
   font-weight: 500;
