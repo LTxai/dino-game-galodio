@@ -65,8 +65,9 @@ function startGame() {
             } else if (cactusPosition > 0 && cactusPosition < 60 && galodinhoPosition < 60) {
                 clearInterval(leftInterval);
                 document.body.innerHTML = `
-                <div>
+                <div class="game-over-container">
                 <h2 class="game-over">Fim de jogo! </br> Pontuação: ${points}</h2>
+                <button class="refresh-button" onClick="window.location.reload();">Jogar novamente</button>
                 <p class='developed-by'> Feito por: <a href=http://www.github.com/LTxai>Lucas Txai</a>
                 </div>
                 `
